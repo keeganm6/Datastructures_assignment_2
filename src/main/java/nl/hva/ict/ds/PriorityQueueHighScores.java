@@ -22,7 +22,9 @@ public class PriorityQueueHighScores implements HighScoreList, Comparator<Player
     @Override
     public List<Player> getHighScores(int numberOfHighScores) {
         List<Player> sortedPlayers = new ArrayList<>();
-        
+
+//      TODO: CHECK DIT FF --> playersList.subList(0, Math.min(numberOfHighScores, playersList.size()))
+//        is vgm ook efficienter dan nieuwe array list maken maar weet niet precies hoe n wat tbh
         if (numberOfHighScores == 0) {
             return sortedPlayers;
         }
@@ -54,11 +56,11 @@ public class PriorityQueueHighScores implements HighScoreList, Comparator<Player
         if (a.getHighScore() < b.getHighScore()) {
             return -1;
         }
-        
+
         if (a.getHighScore() > b.getHighScore()) {
             return 1;
         }
-        
+
         return 0;
     }
 }
