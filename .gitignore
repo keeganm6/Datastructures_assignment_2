@@ -1,3 +1,4 @@
 # Intellij configurations
 .idea
 *.iml
+/target/
