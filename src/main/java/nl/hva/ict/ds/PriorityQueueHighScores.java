@@ -11,7 +11,7 @@ import java.util.PriorityQueue;
  * @author Joey Blankendaal (500778751)
  */
 public class PriorityQueueHighScores implements HighScoreList, Comparator<Player> {
-    private List<Player> players = new ArrayList<>();
+    private PriorityQueue<Player> players = new PriorityQueue<>();
     
     @Override
     public void add(Player player) {
@@ -20,11 +20,10 @@ public class PriorityQueueHighScores implements HighScoreList, Comparator<Player
     
     @Override
     public List<Player> getHighScores(int numberOfHighScores) {
-        PriorityQueue<Player> queue = new PriorityQueue<>(numberOfHighScores, this);
         List<Player> sortedPlayers = new ArrayList<>();
         
-        while (queue.size() != 0) {
-            sortedPlayers.add(queue.remove());
+        while (players.size() != 0) {
+            sortedPlayers.add(players.remove());
         }
         
         return sortedPlayers;
