@@ -1,8 +1,7 @@
 package nl.hva.ict.ds;
 
 import org.junit.Before;
-import org.testng.annotations.Test;
-
+import org.junit.Test;
 
 import java.security.SecureRandom;
 import java.util.Random;
