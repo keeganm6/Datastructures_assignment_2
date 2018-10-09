@@ -11,7 +11,7 @@ import java.util.PriorityQueue;
  * @author Joey Blankendaal (500778751)
  */
 public class PriorityQueueHighScores implements HighScoreList, Comparator<Player> {
-    private PriorityQueue<Player> players = new PriorityQueue<>();
+    private PriorityQueue<Player> players = new PriorityQueue<>(10, this);
     
     @Override
     public void add(Player player) {
