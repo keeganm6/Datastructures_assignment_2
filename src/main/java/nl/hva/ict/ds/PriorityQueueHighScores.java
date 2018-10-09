@@ -18,11 +18,17 @@ public class PriorityQueueHighScores implements HighScoreList, Comparator<Player
         players.add(player);
     }
     
+    // Misschien wat meer doen met numberOfHighScores dan alleen if==0
     @Override
     public List<Player> getHighScores(int numberOfHighScores) {
         List<Player> sortedPlayers = new ArrayList<>();
         
+        if (numberOfHighScores == 0) {
+            return sortedPlayers;
+        }
+        
         while (players.size() != 0) {
+        //for (int i = numberOfHighScores; players.size() > 0; i--) {
             sortedPlayers.add(players.remove());
         }
         
