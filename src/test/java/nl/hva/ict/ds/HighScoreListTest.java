@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.security.SecureRandom;
+import java.util.ArrayList;
 import java.util.Random;
 
 import static org.junit.Assert.assertEquals;
@@ -24,9 +25,9 @@ public class HighScoreListTest {
     public void setup() {
         // Here you should select your implementation to be tested.
 //        highScores = new DummyHighScores();
-//        highScores = new InsertionSortHighScores();
+        highScores = new InsertionSortHighScores();
 //        highScores = new BucketSortHighScores();
-        highScores = new PriorityQueueHighScores();
+//        highScores = new PriorityQueueHighScores();
 
         nearlyHeadlessNick = new Player("Nicholas", "de Mimsy-Porpington", getHighScore() % 200);
         dumbledore = new Player("Albus", "Dumbledore", nearlyHeadlessNick.getHighScore() * 1000);
@@ -40,6 +41,7 @@ public class HighScoreListTest {
     @Test
     public void whenNoHighScoreIsAskedForNonShouldBeGiven() {
         highScores.add(dumbledore);
+        System.out.println(highScores.getHighScores(0).size());
 
         assertEquals(0, highScores.getHighScores(0).size());
     }
@@ -47,7 +49,10 @@ public class HighScoreListTest {
     @Test
     public void noMoreHighScoresCanBeGivenThenPresent() {
         highScores.add(nearlyHeadlessNick);
+        System.out.println(nearlyHeadlessNick.getHighScore());
+        System.out.println(100000%200);
         highScores.add(dumbledore);
+
 
         assertEquals(2, highScores.getHighScores(10).size());
     }
@@ -67,10 +72,15 @@ public class HighScoreListTest {
         assertEquals(dumbledore, highScores.getHighScores(1).get(0));
     }
 
+
+//  TODO: blablabla based on highscores?
     @Test
     public void harryBeatsDumbledore() {
         highScores.add(dumbledore);
         Player harry = new Player("Harry", "Potter", dumbledore.getHighScore() + 1);
+        highScores.add(harry);
+        System.out.println("Harry:" + harry.toString());
+        System.out.println("dumbledore" + dumbledore.toString());
 
         assertEquals(harry, highScores.getHighScores(1).get(0));
     }
@@ -79,5 +89,46 @@ public class HighScoreListTest {
 
     private long getHighScore() {
         return randomizer.nextInt(MAX_HIGH_SCORE);
+    }
+
+    /**
+     *
+     * @author Keegan Meijer (500781475)
+     *
+     * Checks if the given index is valid,
+     * when retrieving a specific object from the newly created highscores list.
+     *
+     */
+    @Test (expected = IndexOutOfBoundsException.class)
+    public void indexOutOfBoundsExceptionGetHighScores() {
+        highScores.getHighScores(1).get(1);
+    }
+
+    /**
+     *
+     * @author Keegan Meijer (500781475)
+     *
+     * Create two objects with the same score but different names (ending: s and z).
+     * Checks if the objects are ordered in the right position, the order should be:
+     *  nicholar - dumbledore - nearlyHeadlessNick
+     *
+     * The tests checks if nicholar is the first element and if nearlyheadlessnick is the last.
+     *
+     */
+    @Test
+    public void firstNameSortingTest(){
+        nearlyHeadlessNick = new Player("Nicholaz", "de Mimsy-Porpington", 100);
+        dumbledore = new Player("Nicholas", "de Mimsy-Porpington", 100);
+        Player nicholar = new Player("Nicholar", "de Mimsy-Porpington", 100);
+
+        highScores.add(nearlyHeadlessNick);
+        highScores.add(dumbledore);
+        highScores.add(nicholar);
+
+        assertTrue(nicholar.equals(highScores.getHighScores(3).get(0)));
+
+//      A-mazing?((InsertionSortHighScores) highScores).getInsertionSortHighscoresSize();
+//      Not sure if it's handy for the other sorting implementations, for this reason I choose this approach
+        assertEquals(nearlyHeadlessNick, highScores.getHighScores(3).get(((InsertionSortHighScores) highScores).getInsertionSortHighscoresSize()-1));
     }
 }
