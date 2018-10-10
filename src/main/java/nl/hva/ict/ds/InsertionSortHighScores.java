@@ -1,13 +1,11 @@
 package nl.hva.ict.ds;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.lang.reflect.Array;
+import java.util.*;
 
 /**
  *
- * @author Keegan Meijer (500718475)
+ * @author Joey Blankendaal (500778751), Keegan Meijer (500781475)
  *
  * Selection sort:
  * This approach will sort the list when a new player has been added to the high-score list.
@@ -20,8 +18,9 @@ import java.util.List;
  * and remove high- scores once they have been added to the list that is returned.
  *
  */
-public class InsertionSortHighScores implements HighScoreList{
-    private List<Player> playersList = new ArrayList<Player>();
+
+public class InsertionSortHighScores implements HighScoreList, Comparator<Player> {
+    private List<Player> playersList = new ArrayList<>();
 
     /**
      * Add a new player to the list of high-scores.
@@ -30,7 +29,7 @@ public class InsertionSortHighScores implements HighScoreList{
     @Override
     public void add(Player player) {
         playersList.add(player);
-        sortHighscores(player);
+        selectionSortHighscores((ArrayList<Player>)playersList);
     }
 
     /**
@@ -42,12 +41,11 @@ public class InsertionSortHighScores implements HighScoreList{
      * @return at list of, maximum numberOfHighScores, players with the highest high-scores in descending order.
      * @throws IndexOutOfBoundsException when retrieving a non existing object from the sub list.
      */
-//    TODO: INDEX OUT OF BOUNDS EXCEPTION PLZ but how?!
     @Override
     public List<Player> getHighScores(int numberOfHighScores) throws IndexOutOfBoundsException{
-        if(playersList.isEmpty()){
-            throw new IndexOutOfBoundsException();
-        }
+//        if(playersList.isEmpty()){
+//            throw new IndexOutOfBoundsException();
+//        }
         return playersList.subList(0, Math.min(numberOfHighScores, playersList.size()));
     }
 
@@ -65,26 +63,83 @@ public class InsertionSortHighScores implements HighScoreList{
      */
     @Override
     public List<Player> findPlayer(String firstName, String lastName) throws IllegalArgumentException {
-        return null;
+        List<Player> foundPlayers = new ArrayList<>();
+
+        for(Player player: playersList){
+//          Checks if either firstname or lastname exists, if so add the player to the temp list
+            if (playersList.contains(firstName)|| playersList.contains(lastName)){foundPlayers.add(player);}
+//            if(playersList.contains(||playersList.contains(lastName)))
+            if (playersList.contains(firstName.concat(lastName))||playersList.contains(lastName.concat(firstName))){foundPlayers.add(player);}
+        }
+        return foundPlayers;
     }
 
 
     /**
      *
-     * @return The sorted list of players based on: highscores, fname, lastname and size
+     * @return The sorted list of players based on: highscores (later?: fname, lastname and size)
      */
-    public List<Player> sortHighscores(Player addPlayer) {
-        Collections.sort(playersList);
-        return playersList;
+
+    public void selectionSortHighscores(ArrayList<Player> players){
+        int arrayLength = players.size();
+
+//      Loop through players ArrayList and compare both objets. I is the first object(minimum)
+        for (int i = 0; i + 1 < arrayLength ; i++) {
+            int minimum = i;
+//          J is the second object (If the compare to method is small then null
+//          Set the minimum as J is the second object is small
+            for (int j = i+1; j < arrayLength ; j++) {
+                if(compare(players.get(j), players.get(minimum))<0) minimum = j;
+
+            }
+            Player switchPlayer = players.get(i);
+            players.set(i, players.get(minimum));
+            players.set(minimum, switchPlayer);
+        }
     }
 
     /**
-     * Handy AF
+     *
+     * @param o1 The first player object for comparison
+     * @param o2 The second player object for comparison
+     * @return A postive, negative or 0 integer based on the comparison
+     *
+     * This function works in descending order:
+     *
+     * The function will compare two highscores (o1 and o2). It will sort the objects
+     *  - Returns negative when o1 > o2, in other words this will set the biggest highscore in front of the smaller
+     *  - Returns positivie when o1 < o2, in other words this will set the lower highscore after the smaller
+     *  - Returns 0 when o1 == o2, in other words will keep same order (Thoughts for later: implement fallback sorting option)
      */
-    public int getInsertionSortHighscoresSize(){
+    @Override
+    public int compare(Player o1, Player o2) {
+        if (o1.getHighScore() > o2.getHighScore()) {
+            return -1;
+        }
+
+        if (o1.getHighScore() < o2.getHighScore()) {
+            return 1;
+        }
+
+        return 0;
+    }
+
+    public int getHighscoreSize() {
         return playersList.size();
     }
 }
+
+/**
+ * good way of sorting but not allow because of signature change
+ */
+//        this.playersList = sortHighscores();
+
+//    public List<Player> sortHighscores() {
+//                        if(players.get(j).compareTo(players.get(minimum))<0) minimum = j;
+//
+//        Collections.sort(playersList);
+//        return playersList;
+//    }
 
 //        for (Player player: playersList) {
 ////          Sorts based on descending order (big(gie)>small(s))
