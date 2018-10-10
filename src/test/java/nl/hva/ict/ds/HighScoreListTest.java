@@ -25,9 +25,9 @@ public class HighScoreListTest {
     public void setup() {
         // Here you should select your implementation to be tested.
 //        highScores = new DummyHighScores();
-        highScores = new InsertionSortHighScores();
+//        highScores = new InsertionSortHighScores();
 //        highScores = new BucketSortHighScores();
-//        highScores = new PriorityQueueHighScores();
+        highScores = new PriorityQueueHighScores();
 
         nearlyHeadlessNick = new Player("Nicholas", "de Mimsy-Porpington", getHighScore() % 200);
         dumbledore = new Player("Albus", "Dumbledore", nearlyHeadlessNick.getHighScore() * 1000);
@@ -50,7 +50,6 @@ public class HighScoreListTest {
     public void noMoreHighScoresCanBeGivenThenPresent() {
         highScores.add(nearlyHeadlessNick);
         System.out.println(nearlyHeadlessNick.getHighScore());
-        System.out.println(100000%200);
         highScores.add(dumbledore);
 
 
@@ -79,8 +78,11 @@ public class HighScoreListTest {
         highScores.add(dumbledore);
         Player harry = new Player("Harry", "Potter", dumbledore.getHighScore() + 1);
         highScores.add(harry);
-        System.out.println("Harry:" + harry.toString());
-        System.out.println("dumbledore" + dumbledore.toString());
+
+//      Print ArrayList
+        for (Player player: highScores.getHighScores(2)) {
+            System.out.println(player.getFirstName()+" " + player.toString());
+        }
 
         assertEquals(harry, highScores.getHighScores(1).get(0));
     }
@@ -104,7 +106,58 @@ public class HighScoreListTest {
         highScores.getHighScores(1).get(1);
     }
 
+
     /**
+     *
+     * @author Keegan Meijer (500781475)
+     *
+     * This function will test a long list and check if the list is sorted.
+     * For running the tests we'll check if the third object is the same as expected but
+     * we have a for each loop commented, so that the tester is able to see the raw data output.
+     * All the other players attributes are the same because we're only testing the highscores.
+     *
+     * Excecpted output: [dumbledore(120) - second(109) - first(104) - nearlyHeadlessNick(102]
+     */
+
+    @Test
+    public void highScoresSortingTest(){
+        Player first = new Player("Nicholaz1", "de Mimsy-Porpington", 104);
+        Player second = new Player("Nicholaz2", "de Mimsy-Porpington", 109);
+        nearlyHeadlessNick = new Player("Nicholaz3", "de Mimsy-Porpington", 102);
+        dumbledore = new Player("Nicholaz4", "de Mimsy-Porpington", 120);
+
+        highScores.add(first);
+        highScores.add(second);
+        highScores.add(nearlyHeadlessNick);
+        highScores.add(dumbledore);
+
+//        FOR PRINT THE LIST
+        for (Player player: highScores.getHighScores(4)) {
+            System.out.println("[+] - Player in highscores array: " + player.getFirstName()+" " + player.toString());
+        }
+
+        ArrayList<Player> sortedArrayList = new ArrayList<>();
+        sortedArrayList.add(dumbledore);
+        sortedArrayList.add(second);
+        sortedArrayList.add(first);
+        sortedArrayList.add(nearlyHeadlessNick);
+
+
+        assertEquals(sortedArrayList, highScores.getHighScores(2));
+    }
+
+
+    @Test
+    public void checkHighScoreSize(){
+        for (int i = 0; i < 50; i++) {
+            highScores.add(new Player("keegan", "meijer", i));
+        }
+        System.out.println(highScores);
+
+    }
+}
+
+    /** TODO: IMPLEMENT FOR FALLBACK SORTING METHOD
      *
      * @author Keegan Meijer (500781475)
      *
@@ -113,22 +166,20 @@ public class HighScoreListTest {
      *  nicholar - dumbledore - nearlyHeadlessNick
      *
      * The tests checks if nicholar is the first element and if nearlyheadlessnick is the last.
-     *
      */
-    @Test
-    public void firstNameSortingTest(){
-        nearlyHeadlessNick = new Player("Nicholaz", "de Mimsy-Porpington", 100);
-        dumbledore = new Player("Nicholas", "de Mimsy-Porpington", 100);
-        Player nicholar = new Player("Nicholar", "de Mimsy-Porpington", 100);
-
-        highScores.add(nearlyHeadlessNick);
-        highScores.add(dumbledore);
-        highScores.add(nicholar);
-
-        assertTrue(nicholar.equals(highScores.getHighScores(3).get(0)));
-
-//      A-mazing?((InsertionSortHighScores) highScores).getInsertionSortHighscoresSize();
-//      Not sure if it's handy for the other sorting implementations, for this reason I choose this approach
-        assertEquals(nearlyHeadlessNick, highScores.getHighScores(3).get(((InsertionSortHighScores) highScores).getInsertionSortHighscoresSize()-1));
-    }
-}
+//    @Test
+//    public void firstNameSortingTest(){
+//        nearlyHeadlessNick = new Player("Nicholaz", "de Mimsy-Porpington", 100);
+//        dumbledore = new Player("Nicholas", "de Mimsy-Porpington", 100);
+//        Player nicholar = new Player("Nicholar", "de Mimsy-Porpington", 100);
+//
+//        highScores.add(nearlyHeadlessNick);
+//        highScores.add(dumbledore);
+//        highScores.add(nicholar);
+//
+//        assertTrue(nicholar.equals(highScores.getHighScores(3).get(0)));
+//
+////      A-mazing?((InsertionSortHighScores) highScores).getInsertionSortHighscoresSize();
+////      Not sure if it's handy for the other sorting implementations, for this reason I choose this approach
+//        assertEquals(nearlyHeadlessNick, highScores.getHighScores(3).get(((InsertionSortHighScores) highScores).getInsertionSortHighscoresSize()-1));
+//    }

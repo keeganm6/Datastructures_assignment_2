@@ -5,7 +5,7 @@ package nl.hva.ict.ds;
  * Once created the name can't be changed. The best score for this player
  * can be changed during the livetime of an instance.
  */
-public class Player implements Comparable<Player> {
+public class Player {
     private String firstName;
     private String lastName;
     private long highScore;
@@ -32,9 +32,4 @@ public class Player implements Comparable<Player> {
         this.highScore = highScore;
     }
 
-//    TODO: ADD METHODS FOR EXCEPTIONS
-    @Override
-    public int compareTo(Player o) throws NullPointerException, ClassCastException{
-        return Long.compare(o.getHighScore(), this.highScore);
-    }
 }
