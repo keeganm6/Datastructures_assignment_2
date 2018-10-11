@@ -1,0 +1,344 @@
+/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/bin/java -ea -Xint -Didea.test.cyclic.buffer.size=1048576 "-javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64113:/Applications/IntelliJ IDEA.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit-rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit5-rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/tools.jar:/Users/Keegan/Documents/School/HBO_ICT/Jaar_2/Datastructures/Practicum_opdrachten/Assignment_2/Datastructures_assignment_2/target/test-classes:/Users/Keegan/Documents/School/HBO_ICT/Jaar_2/Datastructures/Practicum_opdrachten/Assignment_2/Datastructures_assignment_2/target/classes:/Users/Keegan/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/Keegan/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar" com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 -junit4 nl.hva.ict.ds.HighScoreListTest,investigateTimeDifferentImplementations
+objc[21785]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/bin/java (0x10665c4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1076cb4e0). One of the two will be used. Which one is undefined.
+[+] List amount: - 100
+[+] - Running time (nanoSeconds): 1739559
+[+] List amount: - 100
+[+] - Running time (nanoSeconds): 70095
+[+] List amount: - 100
+[+] - Running time (nanoSeconds): 53213
+[+] List amount: - 100
+[+] - Running time (nanoSeconds): 74794
+[+] List amount: - 100
+[+] - Running time (nanoSeconds): 64550
+[+] List amount: - 100
+[+] - Running time (nanoSeconds): 68616
+[+] List amount: - 100
+[+] - Running time (nanoSeconds): 76927
+[+] List amount: - 100
+[+] - Running time (nanoSeconds): 88558
+[+] List amount: - 100
+[+] - Running time (nanoSeconds): 97238
+[+] List amount: - 100
+[+] - Running time (nanoSeconds): 104629
+[+] List amount: - 200
+[+] - Running time (nanoSeconds): 122148
+[+] List amount: - 200
+[+] - Running time (nanoSeconds): 141498
+[+] List amount: - 200
+[+] - Running time (nanoSeconds): 146793
+[+] List amount: - 200
+[+] - Running time (nanoSeconds): 168943
+[+] List amount: - 200
+[+] - Running time (nanoSeconds): 167892
+[+] List amount: - 200
+[+] - Running time (nanoSeconds): 197073
+[+] List amount: - 200
+[+] - Running time (nanoSeconds): 2178572
+[+] List amount: - 200
+[+] - Running time (nanoSeconds): 1742665
+[+] List amount: - 200
+[+] - Running time (nanoSeconds): 404650
+[+] List amount: - 200
+[+] - Running time (nanoSeconds): 1163374
+[+] List amount: - 400
+[+] - Running time (nanoSeconds): 822454
+[+] List amount: - 400
+[+] - Running time (nanoSeconds): 1119439
+[+] List amount: - 400
+[+] - Running time (nanoSeconds): 483369
+[+] List amount: - 400
+[+] - Running time (nanoSeconds): 1350293
+[+] List amount: - 400
+[+] - Running time (nanoSeconds): 404430
+[+] List amount: - 400
+[+] - Running time (nanoSeconds): 20237199
+[+] List amount: - 400
+[+] - Running time (nanoSeconds): 1068171
+[+] List amount: - 400
+[+] - Running time (nanoSeconds): 1575149
+[+] List amount: - 400
+[+] - Running time (nanoSeconds): 1097486
+[+] List amount: - 400
+[+] - Running time (nanoSeconds): 1011828
+[+] List amount: - 800
+[+] - Running time (nanoSeconds): 496004
+[+] List amount: - 800
+[+] - Running time (nanoSeconds): 1323088
+[+] List amount: - 800
+[+] - Running time (nanoSeconds): 1250296
+[+] List amount: - 800
+[+] - Running time (nanoSeconds): 2897058
+[+] List amount: - 800
+[+] - Running time (nanoSeconds): 964980
+[+] List amount: - 800
+[+] - Running time (nanoSeconds): 1449876
+[+] List amount: - 800
+[+] - Running time (nanoSeconds): 824663
+[+] List amount: - 800
+[+] - Running time (nanoSeconds): 912875
+[+] List amount: - 800
+[+] - Running time (nanoSeconds): 1032240
+[+] List amount: - 800
+[+] - Running time (nanoSeconds): 1561866
+[+] List amount: - 1600
+[+] - Running time (nanoSeconds): 1115652
+[+] List amount: - 1600
+[+] - Running time (nanoSeconds): 1157793
+[+] List amount: - 1600
+[+] - Running time (nanoSeconds): 1099520
+[+] List amount: - 1600
+[+] - Running time (nanoSeconds): 1771267
+[+] List amount: - 1600
+[+] - Running time (nanoSeconds): 1763384
+[+] List amount: - 1600
+[+] - Running time (nanoSeconds): 1556455
+[+] List amount: - 1600
+[+] - Running time (nanoSeconds): 2058269
+[+] List amount: - 1600
+[+] - Running time (nanoSeconds): 18820669
+[+] List amount: - 1600
+[+] - Running time (nanoSeconds): 16391915
+[+] List amount: - 1600
+[+] - Running time (nanoSeconds): 2154119
+[+] List amount: - 3200
+[+] - Running time (nanoSeconds): 2654027
+[+] List amount: - 3200
+[+] - Running time (nanoSeconds): 1706209
+[+] List amount: - 3200
+[+] - Running time (nanoSeconds): 1700500
+[+] List amount: - 3200
+[+] - Running time (nanoSeconds): 2734162
+[+] List amount: - 3200
+[+] - Running time (nanoSeconds): 2731496
+[+] List amount: - 3200
+[+] - Running time (nanoSeconds): 16505603
+[+] List amount: - 3200
+[+] - Running time (nanoSeconds): 2270937
+[+] List amount: - 3200
+[+] - Running time (nanoSeconds): 2378084
+[+] List amount: - 3200
+[+] - Running time (nanoSeconds): 11417846
+[+] List amount: - 3200
+[+] - Running time (nanoSeconds): 3951454
+[+] List amount: - 6400
+[+] - Running time (nanoSeconds): 26511286
+[+] List amount: - 6400
+[+] - Running time (nanoSeconds): 3538293
+[+] List amount: - 6400
+[+] - Running time (nanoSeconds): 10578908
+[+] List amount: - 6400
+[+] - Running time (nanoSeconds): 4823715
+[+] List amount: - 6400
+[+] - Running time (nanoSeconds): 4242084
+[+] List amount: - 6400
+[+] - Running time (nanoSeconds): 2478525
+[+] List amount: - 6400
+[+] - Running time (nanoSeconds): 42160345
+[+] List amount: - 6400
+[+] - Running time (nanoSeconds): 2984987
+[+] List amount: - 6400
+[+] - Running time (nanoSeconds): 2776365
+[+] List amount: - 6400
+[+] - Running time (nanoSeconds): 5169443
+[+] List amount: - 12800
+[+] - Running time (nanoSeconds): 2804187
+[+] List amount: - 12800
+[+] - Running time (nanoSeconds): 3006284
+[+] List amount: - 12800
+[+] - Running time (nanoSeconds): 4089025
+[+] List amount: - 12800
+[+] - Running time (nanoSeconds): 3674966
+[+] List amount: - 12800
+[+] - Running time (nanoSeconds): 3358299
+[+] List amount: - 12800
+[+] - Running time (nanoSeconds): 3807222
+[+] List amount: - 12800
+[+] - Running time (nanoSeconds): 7433385
+[+] List amount: - 12800
+[+] - Running time (nanoSeconds): 7233962
+[+] List amount: - 12800
+[+] - Running time (nanoSeconds): 11797585
+[+] List amount: - 12800
+[+] - Running time (nanoSeconds): 11967232
+[+] List amount: - 25600
+[+] - Running time (nanoSeconds): 6770288
+[+] List amount: - 25600
+[+] - Running time (nanoSeconds): 4506493
+[+] List amount: - 25600
+[+] - Running time (nanoSeconds): 4653586
+[+] List amount: - 25600
+[+] - Running time (nanoSeconds): 38166448
+[+] List amount: - 25600
+[+] - Running time (nanoSeconds): 18055688
+[+] List amount: - 25600
+[+] - Running time (nanoSeconds): 9544483
+[+] List amount: - 25600
+[+] - Running time (nanoSeconds): 5109108
+[+] List amount: - 25600
+[+] - Running time (nanoSeconds): 5125565
+[+] List amount: - 25600
+[+] - Running time (nanoSeconds): 25011770
+[+] List amount: - 25600
+[+] - Running time (nanoSeconds): 7100358
+[+] List amount: - 51200
+[+] - Running time (nanoSeconds): 19272874
+[+] List amount: - 51200
+[+] - Running time (nanoSeconds): 15091835
+[+] List amount: - 51200
+[+] - Running time (nanoSeconds): 16984821
+[+] List amount: - 51200
+[+] - Running time (nanoSeconds): 5450732
+[+] List amount: - 51200
+[+] - Running time (nanoSeconds): 31492577
+[+] List amount: - 51200
+[+] - Running time (nanoSeconds): 11473749
+[+] List amount: - 51200
+[+] - Running time (nanoSeconds): 12045638
+[+] List amount: - 51200
+[+] - Running time (nanoSeconds): 17963576
+[+] List amount: - 51200
+[+] - Running time (nanoSeconds): 22626431
+[+] List amount: - 51200
+[+] - Running time (nanoSeconds): 17722022
+[+] List amount: - 102400
+[+] - Running time (nanoSeconds): 38415677
+[+] List amount: - 102400
+[+] - Running time (nanoSeconds): 10201329
+[+] List amount: - 102400
+[+] - Running time (nanoSeconds): 39581781
+[+] List amount: - 102400
+[+] - Running time (nanoSeconds): 9874054
+[+] List amount: - 102400
+[+] - Running time (nanoSeconds): 23160833
+[+] List amount: - 102400
+[+] - Running time (nanoSeconds): 12301709
+[+] List amount: - 102400
+[+] - Running time (nanoSeconds): 9131582
+[+] List amount: - 102400
+[+] - Running time (nanoSeconds): 8473596
+[+] List amount: - 102400
+[+] - Running time (nanoSeconds): 19208570
+[+] List amount: - 102400
+[+] - Running time (nanoSeconds): 9933966
+[+] List amount: - 204800
+[+] - Running time (nanoSeconds): 20845834
+[+] List amount: - 204800
+[+] - Running time (nanoSeconds): 8447159
+[+] List amount: - 204800
+[+] - Running time (nanoSeconds): 7400481
+[+] List amount: - 204800
+[+] - Running time (nanoSeconds): 10239377
+[+] List amount: - 204800
+[+] - Running time (nanoSeconds): 14014168
+[+] List amount: - 204800
+[+] - Running time (nanoSeconds): 7795404
+[+] List amount: - 204800
+[+] - Running time (nanoSeconds): 8313316
+[+] List amount: - 204800
+[+] - Running time (nanoSeconds): 43399353
+[+] List amount: - 204800
+[+] - Running time (nanoSeconds): 10552194
+[+] List amount: - 204800
+[+] - Running time (nanoSeconds): 22933961
+[+] List amount: - 409600
+[+] - Running time (nanoSeconds): 22071878
+[+] List amount: - 409600
+[+] - Running time (nanoSeconds): 36263053
+[+] List amount: - 409600
+[+] - Running time (nanoSeconds): 21824640
+[+] List amount: - 409600
+[+] - Running time (nanoSeconds): 23799498
+[+] List amount: - 409600
+[+] - Running time (nanoSeconds): 45315850
+[+] List amount: - 409600
+[+] - Running time (nanoSeconds): 13181631
+[+] List amount: - 409600
+[+] - Running time (nanoSeconds): 11729206
+[+] List amount: - 409600
+[+] - Running time (nanoSeconds): 15794970
+[+] List amount: - 409600
+[+] - Running time (nanoSeconds): 29179356
+[+] List amount: - 409600
+[+] - Running time (nanoSeconds): 48789673
+[+] List amount: - 819200
+[+] - Running time (nanoSeconds): 12612988
+[+] List amount: - 819200
+[+] - Running time (nanoSeconds): 20963758
+[+] List amount: - 819200
+[+] - Running time (nanoSeconds): 21375430
+[+] List amount: - 819200
+[+] - Running time (nanoSeconds): 12635759
+[+] List amount: - 819200
+[+] - Running time (nanoSeconds): 38104380
+[+] List amount: - 819200
+[+] - Running time (nanoSeconds): 32123630
+[+] List amount: - 819200
+[+] - Running time (nanoSeconds): 12199126
+[+] List amount: - 819200
+[+] - Running time (nanoSeconds): 16191201
+[+] List amount: - 819200
+[+] - Running time (nanoSeconds): 24584391
+[+] List amount: - 819200
+[+] - Running time (nanoSeconds): 29313220
+[+] List amount: - 1638400
+[+] - Running time (nanoSeconds): 12312578
+[+] List amount: - 1638400
+[+] - Running time (nanoSeconds): 19699793
+[+] List amount: - 1638400
+[+] - Running time (nanoSeconds): 24550032
+[+] List amount: - 1638400
+[+] - Running time (nanoSeconds): 21626375
+[+] List amount: - 1638400
+[+] - Running time (nanoSeconds): 30470058
+[+] List amount: - 1638400
+[+] - Running time (nanoSeconds): 45524443
+[+] List amount: - 1638400
+[+] - Running time (nanoSeconds): 16134217
+[+] List amount: - 1638400
+[+] - Running time (nanoSeconds): 33580230
+[+] List amount: - 1638400
+[+] - Running time (nanoSeconds): 12952667
+[+] List amount: - 1638400
+[+] - Running time (nanoSeconds): 40631992
+[+] List amount: - 3276800
+[+] - Running time (nanoSeconds): 25024745
+[+] List amount: - 3276800
+[+] - Running time (nanoSeconds): 30854764
+[+] List amount: - 3276800
+[+] - Running time (nanoSeconds): 23309021
+[+] List amount: - 3276800
+[+] - Running time (nanoSeconds): 39165784
+[+] List amount: - 3276800
+[+] - Running time (nanoSeconds): 43052114
+[+] List amount: - 3276800
+[+] - Running time (nanoSeconds): 16269212
+[+] List amount: - 3276800
+[+] - Running time (nanoSeconds): 19849661
+[+] List amount: - 3276800
+[+] - Running time (nanoSeconds): 32502184
+[+] List amount: - 3276800
+[+] - Running time (nanoSeconds): 25160043
+[+] List amount: - 3276800
+[+] - Running time (nanoSeconds): 15877619
+[+] List amount: - 6553600
+[+] - Running time (nanoSeconds): 44554535
+[+] List amount: - 6553600
+[+] - Running time (nanoSeconds): 30915438
+[+] List amount: - 6553600
+[+] - Running time (nanoSeconds): 68008569
+[+] List amount: - 6553600
+[+] - Running time (nanoSeconds): 35614578
+[+] List amount: - 6553600
+[+] - Running time (nanoSeconds): 31714825
+[+] List amount: - 6553600
+[+] - Running time (nanoSeconds): 34392757
+[+] List amount: - 6553600
+[+] - Running time (nanoSeconds): 149768025
+[+] List amount: - 6553600
+[+] - Running time (nanoSeconds): 42867326
+[+] List amount: - 6553600
+[+] - Running time (nanoSeconds): 43992276
+[+] List amount: - 6553600
+[+] - Running time (nanoSeconds): 25024988
+
+Process finished with exit code 0
