@@ -211,11 +211,14 @@ public class HighScoreListTest {
                 long start = System.nanoTime();
 
                 highScores.add(new Player("KEEGANMEIJER", "JOEYBLANKENDAAL", i));
-                System.out.println("[+] List amount: - " + listAmount);
+//                System.out.println("[+] List amount: - " + listAmount);
+//                System.out.print(listAmount+";");
                 long end = System.nanoTime();
-                System.out.println("[+] - Running time: " + (int)(end - start));
+//                System.out.println("[+] - Running time (nanoSeconds): " + (int)(end - start));
+                System.out.print((end - start)+";");
                 if ((int)(end - start)<15){break outerloop;}
             }
+//            System.out.println();
         }
     }
 }
