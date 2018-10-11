@@ -4,12 +4,10 @@ import java.lang.reflect.Array;
 import java.util.*;
 
 /**
- *
- * @author Joey Blankendaal (500778751), Keegan Meijer (500781475)
- *
  * Selection sort:
  * This approach will sort the list when a new player has been added to the high-score list.
  *
+ * @author Joey Blankendaal (500778751), Keegan Meijer (500781475)
  *
  * Your first approach is to sort the list with players after a new player has been added to the high-score list.
  * There are two different variants you want to investigate.
@@ -18,7 +16,6 @@ import java.util.*;
  * and remove high- scores once they have been added to the list that is returned.
  *
  */
-
 public class InsertionSortHighScores implements HighScoreList, Comparator<Player> {
     private List<Player> playersList = new ArrayList<>();
 
@@ -42,13 +39,9 @@ public class InsertionSortHighScores implements HighScoreList, Comparator<Player
      * @throws IndexOutOfBoundsException when retrieving a non existing object from the sub list.
      */
     @Override
-    public List<Player> getHighScores(int numberOfHighScores) throws IndexOutOfBoundsException{
-//        if(playersList.isEmpty()){
-//            throw new IndexOutOfBoundsException();
-//        }
+    public List<Player> getHighScores(int numberOfHighScores) {
         return playersList.subList(0, Math.min(numberOfHighScores, playersList.size()));
     }
-
 
     /**
      * Finds players based on their first and last name. At least one of the parameters must have a value other
@@ -65,33 +58,32 @@ public class InsertionSortHighScores implements HighScoreList, Comparator<Player
     public List<Player> findPlayer(String firstName, String lastName) throws IllegalArgumentException {
         List<Player> foundPlayers = new ArrayList<>();
 
-        for(Player player: playersList){
-//          Checks if either firstname or lastname exists, if so add the player to the temp list
-            if (playersList.contains(firstName)|| playersList.contains(lastName)){foundPlayers.add(player);}
-//            if(playersList.contains(||playersList.contains(lastName)))
-            if (playersList.contains(firstName.concat(lastName))||playersList.contains(lastName.concat(firstName))){foundPlayers.add(player);}
+        for (Player player : playersList) {
+            if (playersList.contains(firstName)|| playersList.contains(lastName)) {
+                foundPlayers.add(player);
+            }
+            
+            if (playersList.contains(firstName.concat(lastName)) || playersList.contains(lastName.concat(firstName))) {
+                foundPlayers.add(player);
+            }
         }
+        
         return foundPlayers;
     }
 
-
     /**
-     *
      * @return The sorted list of players based on: highscores (later?: fname, lastname and size)
      */
-
     public void selectionSortHighscores(ArrayList<Player> players){
         int arrayLength = players.size();
-
-//      Loop through players ArrayList and compare both objets. I is the first object(minimum)
+        
         for (int i = 0; i + 1 < arrayLength ; i++) {
             int minimum = i;
-//          J is the second object (If the compare to method is small then null
-//          Set the minimum as J is the second object is small
+            
             for (int j = i+1; j < arrayLength ; j++) {
-                if(compare(players.get(j), players.get(minimum))<0) minimum = j;
-
+                if(compare(players.get(j), players.get(minimum)) <0 ) minimum = j;
             }
+            
             Player switchPlayer = players.get(i);
             players.set(i, players.get(minimum));
             players.set(minimum, switchPlayer);
@@ -99,7 +91,6 @@ public class InsertionSortHighScores implements HighScoreList, Comparator<Player
     }
 
     /**
-     *
      * @param o1 The first player object for comparison
      * @param o2 The second player object for comparison
      * @return A postive, negative or 0 integer based on the comparison
@@ -124,23 +115,3 @@ public class InsertionSortHighScores implements HighScoreList, Comparator<Player
         return 0;
     }
 }
-
-/**
- * good way of sorting but not allow because of signature change
- */
-//        this.playersList = sortHighscores();
-
-//    public List<Player> sortHighscores() {
-//                        if(players.get(j).compareTo(players.get(minimum))<0) minimum = j;
-//
-//        Collections.sort(playersList);
-//        return playersList;
-//    }
-
-//        for (Player player: playersList) {
-////          Sorts based on descending order (big(gie)>small(s))
-//            addPlayer.compareTo(player);
-//        }
-//
-//        return playersList;
-
