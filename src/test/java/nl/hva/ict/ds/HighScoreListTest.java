@@ -70,15 +70,12 @@ public class HighScoreListTest {
         assertEquals(dumbledore, highScores.getHighScores(1).get(0));
     }
 
-
-//  TODO: blablabla based on highscores?
     @Test
     public void harryBeatsDumbledore() {
         highScores.add(dumbledore);
         Player harry = new Player("Harry", "Potter", dumbledore.getHighScore() + 1);
         highScores.add(harry);
 
-//      Print ArrayList
         for (Player player: highScores.getHighScores(2)) {
             System.out.println(player.getFirstName()+" " + player.toString());
         }
@@ -87,7 +84,6 @@ public class HighScoreListTest {
     }
 
     // Extra unit tests go here
-
     private long getHighScore() {
         return randomizer.nextInt(MAX_HIGH_SCORE);
     }
