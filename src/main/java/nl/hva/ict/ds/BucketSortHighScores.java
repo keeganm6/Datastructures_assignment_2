@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class BucketSortHighScores implements HighScoreList {
     private List<Player> playerList = new ArrayList<>();
-    private List<Player> temp;
+    private List<Player> bucketBuilder;
     int numberOfBuckets = 10;
     Bucket[] bucketList = new Bucket[numberOfBuckets];
 
@@ -18,7 +18,6 @@ public class BucketSortHighScores implements HighScoreList {
      * Creates the bucketList, which contains buckets, the list will be the same length as numberOfBuckets
      */
     public BucketSortHighScores(){
-        System.out.println("[+] - Bucket sort length: " + bucketList.length);
         
         for (int i = 0; i < bucketList.length; i++) {
             bucketList[i] = new Bucket();
@@ -27,22 +26,24 @@ public class BucketSortHighScores implements HighScoreList {
 
     @Override
     public void add(Player player) {
-        playerList.add(player);
-        long bucketIndex = ((player.getHighScore() * 10) / 10000001);
+        long bucketIndex = ((player.getHighScore() * 10) / 1000000);
+//        System.out.println("[+] - BucketIndex of " + player.getFirstName() +" "+ bucketIndex);
         bucketList[(int) bucketIndex].bucket.add(player);
 
+//        Sorts each bucket
         InsertionSortHighScores is = new InsertionSortHighScores();
         for (int i = 0; i < bucketList.length; i++) {
             is.selectionSortHighscores(bucketList[i].bucket);
         }
 
-        temp = new ArrayList<>();
-        for (int i = bucketList.length - 1; i >= 0; i--) {
+//        Add the bucket to the correct list
+        bucketBuilder = new ArrayList<>();
+        for (int i = numberOfBuckets - 1; i >= 0; i--) {
             for (int j = 0; j < bucketList[i].bucket.size(); j++) {
-                temp.add(bucketList[i].bucket.get(j));
+                bucketBuilder.add(bucketList[i].bucket.get(j));
             }
         }
-        playerList = temp;
+        playerList = bucketBuilder;
     }
     
     @Override
