@@ -32,16 +32,19 @@ public class BucketSortHighScores implements HighScoreList {
         bucketList[(int) bucketIndex].bucket.add(player);
 
         InsertionSortHighScores is = new InsertionSortHighScores();
+        
         for (int i = 0; i < bucketList.length; i++) {
             is.selectionSortHighscores(bucketList[i].bucket);
         }
 
         temp = new ArrayList<>();
+        
         for (int i = bucketList.length - 1; i >= 0; i--) {
             for (int j = 0; j < bucketList[i].bucket.size(); j++) {
                 temp.add(bucketList[i].bucket.get(j));
             }
         }
+        
         playerList = temp;
     }
     

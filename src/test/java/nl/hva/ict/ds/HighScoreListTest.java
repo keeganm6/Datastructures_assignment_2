@@ -89,31 +89,26 @@ public class HighScoreListTest {
     }
 
     /**
-     *
-     * @author Keegan Meijer (500781475)
-     *
      * Checks if the given index is valid,
      * when retrieving a specific object from the newly created highscores list.
      *
+     * @author Keegan Meijer (500781475), Joey Blankendaal (500778751)
      */
     @Test (expected = IndexOutOfBoundsException.class)
     public void indexOutOfBoundsExceptionGetHighScores() {
         highScores.getHighScores(1).get(1);
     }
 
-
     /**
-     *
-     * @author Keegan Meijer (500781475)
-     *
      * This function will test a long list and check if the list is sorted.
      * For running the tests we'll check if the third object is the same as expected but
      * we have a for each loop commented, so that the tester is able to see the raw data output.
      * All the other players attributes are the same because we're only testing the highscores.
      *
      * Excecpted output: [dumbledore(120) - second(109) - first(104) - nearlyHeadlessNick(102]
+     *
+     * @author Keegan Meijer (500781475), Joey Blankendaal (500778751)
      */
-
     @Test
     public void highScoresSortingTest(){
         Player first = new Player("Nicholaz1", "de Mimsy-Porpington", 104);
@@ -126,7 +121,6 @@ public class HighScoreListTest {
         highScores.add(nearlyHeadlessNick);
         highScores.add(dumbledore);
 
-//        FOR PRINT THE LIST
         for (Player player: highScores.getHighScores(4)) {
             System.out.println("[+] - Player in highscores array: " + player.getFirstName()+" " + player.toString());
         }
@@ -137,10 +131,8 @@ public class HighScoreListTest {
         sortedArrayList.add(first);
         sortedArrayList.add(nearlyHeadlessNick);
 
-
         assertEquals(sortedArrayList, highScores.getHighScores(4));
     }
-
 
     @Test
     public void checkHighScoreSize(){
