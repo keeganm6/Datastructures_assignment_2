@@ -16,22 +16,17 @@ public class PriorityQueueHighScores implements HighScoreList, Comparator<Player
     @Override
     public void add(Player player) {
         players.add(player);
-//        sort();
     }
 
-    // Misschien wat meer doen met numberOfHighScores dan alleen if==0
     @Override
     public List<Player> getHighScores(int numberOfHighScores) {
         List<Player> sortedPlayers = new ArrayList<>(10);
 
-//      TODO: CHECK DIT FF --> playersList.subList(0, Math.min(numberOfHighScores, playersList.size()))
-//      Is vgm ook efficienter dan nieuwe array list maken maar weet niet precies hoe n wat tbh
         if (numberOfHighScores == 0) {
             return sortedPlayers;
         }
 
         while (players.size() != 0) {
-            //for (int i = numberOfHighScores; players.size() > 0; i--) {
             sortedPlayers.add(players.remove());
         }
 
@@ -42,7 +37,6 @@ public class PriorityQueueHighScores implements HighScoreList, Comparator<Player
         return sortedPlayers;
     }
 
-    // Rewrite dit later maar
     @Override
     public List<Player> findPlayer(String firstName, String lastName) {
         List<Player> matchedPlayers = new ArrayList<>();
@@ -73,36 +67,3 @@ public class PriorityQueueHighScores implements HighScoreList, Comparator<Player
         return players.size();
     }
 }
-
-//    public void sort() {
-//        for (int i = 0; i < players.size(); i++) {
-//            players.add(players.remove());
-//        }
-//    }
-
-//        System.out.println("[+] - Removed player: " + players.remove());
-//        while (players.size()!= 0){
-//            this.players.add(playerz.remove());
-//        }
-//        Player player;
-//        while ((player = this.players.poll()) != null){
-//            System.out.println("[+] - Player in while loop: " + player);
-//            players.add(player);
-//        }
-
-
-//        for (int i = 0; i < players.size(); i++) {
-//            sortedPlayers.add(player);
-//        }
-//        while ((player = players.poll()) != null){
-//            System.out.println("while je kankermoeder");
-//            System.out.println(player);
-//            sortedPlayers.add(player);
-//        }
-
-
-//
-//        while (players.size() != 0) {
-//        //for (int i = numberOfHighScores; players.size() > 0; i--) {
-//            sortedPlayers.add(players.poll());
-//        }
