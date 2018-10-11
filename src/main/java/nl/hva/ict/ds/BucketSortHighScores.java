@@ -1,16 +1,13 @@
 package nl.hva.ict.ds;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * Bucket sorting the high scores.
  * 
  * @author Joey Blankendaal (500778751), Keegan Meijer (500781475)
  */
-public class BucketSortHighScores implements HighScoreList {
+public class BucketSortHighScores implements HighScoreList, Comparator<Player> {
     private List<Player> playerList = new ArrayList<>();
     private List<Player> bucketBuilder;
     int numberOfBuckets = 10;
@@ -33,10 +30,8 @@ public class BucketSortHighScores implements HighScoreList {
         bucketList[(int) bucketIndex].bucket.add(player);
 
 //        Sorts each bucket
-//        InsertionSortHighScores is = new InsertionSortHighScores();
         for (int i = 0; i < bucketList.length; i++) {
-            Collections.sort((ArrayList)bucketList[i].bucket);
-//            is.selectionSortHighscores(bucketList[i].bucket);
+            Collections.sort((ArrayList)bucketList[i].bucket, this);
         }
 
 //        Add the bucket to the correct list
@@ -58,6 +53,19 @@ public class BucketSortHighScores implements HighScoreList {
     public List<Player> findPlayer(String firstName, String lastName) throws IllegalArgumentException {
         InsertionSortHighScores is = new InsertionSortHighScores();
         return is.findPlayer(firstName, lastName);
+    }
+
+    @Override
+    public int compare(Player a, Player b) {
+        if (a.getHighScore() > b.getHighScore()) {
+            return -1;
+        }
+
+        if (a.getHighScore() < b.getHighScore()) {
+            return 1;
+        }
+
+        return 0;
     }
 
     /**
