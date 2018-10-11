@@ -123,7 +123,7 @@ public class HighScoreListTest {
         Player first = new Player("Nicholaz1", "de Mimsy-Porpington", 104);
         Player second = new Player("Nicholaz2", "de Mimsy-Porpington", 109);
         nearlyHeadlessNick = new Player("Nicholaz3", "de Mimsy-Porpington", 102);
-        dumbledore = new Player("Nicholaz4", "de Mimsy-Porpington", 120);
+        dumbledore = new Player("Nicholaz4", "de Mimsy-Porpington", 200000);
 
         highScores.add(first);
         highScores.add(second);
