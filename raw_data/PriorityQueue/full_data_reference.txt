@@ -1,339 +1,340 @@
-[+] - Running time (nanoSeconds): 525431
 [+] List amount: - 100
-[+] - Running time (nanoSeconds): 241940
+[+] - Running time (nanoSeconds): 175326
 [+] List amount: - 100
-[+] - Running time (nanoSeconds): 153713
+[+] - Running time (nanoSeconds): 228078
 [+] List amount: - 100
-[+] - Running time (nanoSeconds): 170682
+[+] - Running time (nanoSeconds): 66805
 [+] List amount: - 100
-[+] - Running time (nanoSeconds): 138222
+[+] - Running time (nanoSeconds): 54157
 [+] List amount: - 100
-[+] - Running time (nanoSeconds): 149341
+[+] - Running time (nanoSeconds): 52495
 [+] List amount: - 100
-[+] - Running time (nanoSeconds): 171664
+[+] - Running time (nanoSeconds): 68655
 [+] List amount: - 100
-[+] - Running time (nanoSeconds): 252577
+[+] - Running time (nanoSeconds): 51239
 [+] List amount: - 100
-[+] - Running time (nanoSeconds): 441375
+[+] - Running time (nanoSeconds): 49156
 [+] List amount: - 100
-[+] - Running time (nanoSeconds): 315820
+[+] - Running time (nanoSeconds): 51887
+[+] List amount: - 100
+[+] - Running time (nanoSeconds): 67034
 [+] List amount: - 200
-[+] - Running time (nanoSeconds): 392679
+[+] - Running time (nanoSeconds): 82727
 [+] List amount: - 200
-[+] - Running time (nanoSeconds): 442297
+[+] - Running time (nanoSeconds): 51406
 [+] List amount: - 200
-[+] - Running time (nanoSeconds): 525834
+[+] - Running time (nanoSeconds): 56717
 [+] List amount: - 200
-[+] - Running time (nanoSeconds): 604600
+[+] - Running time (nanoSeconds): 52237
 [+] List amount: - 200
-[+] - Running time (nanoSeconds): 684397
+[+] - Running time (nanoSeconds): 62951
 [+] List amount: - 200
-[+] - Running time (nanoSeconds): 846467
+[+] - Running time (nanoSeconds): 56741
 [+] List amount: - 200
-[+] - Running time (nanoSeconds): 969685
+[+] - Running time (nanoSeconds): 58884
 [+] List amount: - 200
-[+] - Running time (nanoSeconds): 2051993
+[+] - Running time (nanoSeconds): 59910
 [+] List amount: - 200
-[+] - Running time (nanoSeconds): 1589545
+[+] - Running time (nanoSeconds): 59083
 [+] List amount: - 200
-[+] - Running time (nanoSeconds): 1525940
+[+] - Running time (nanoSeconds): 64626
 [+] List amount: - 400
-[+] - Running time (nanoSeconds): 1569609
+[+] - Running time (nanoSeconds): 52799
 [+] List amount: - 400
-[+] - Running time (nanoSeconds): 1420264
+[+] - Running time (nanoSeconds): 57087
 [+] List amount: - 400
-[+] - Running time (nanoSeconds): 1566745
+[+] - Running time (nanoSeconds): 63007
 [+] List amount: - 400
-[+] - Running time (nanoSeconds): 1616389
+[+] - Running time (nanoSeconds): 60562
 [+] List amount: - 400
-[+] - Running time (nanoSeconds): 1952865
+[+] - Running time (nanoSeconds): 60447
 [+] List amount: - 400
-[+] - Running time (nanoSeconds): 3273308
+[+] - Running time (nanoSeconds): 59752
 [+] List amount: - 400
-[+] - Running time (nanoSeconds): 2940276
+[+] - Running time (nanoSeconds): 62875
 [+] List amount: - 400
-[+] - Running time (nanoSeconds): 3672877
+[+] - Running time (nanoSeconds): 69854
 [+] List amount: - 400
-[+] - Running time (nanoSeconds): 5732394
+[+] - Running time (nanoSeconds): 60217
 [+] List amount: - 400
-[+] - Running time (nanoSeconds): 8326740
+[+] - Running time (nanoSeconds): 61763
 [+] List amount: - 800
-[+] - Running time (nanoSeconds): 4557858
+[+] - Running time (nanoSeconds): 53179
 [+] List amount: - 800
-[+] - Running time (nanoSeconds): 2949476
+[+] - Running time (nanoSeconds): 52086
 [+] List amount: - 800
-[+] - Running time (nanoSeconds): 8941973
+[+] - Running time (nanoSeconds): 50480
 [+] List amount: - 800
-[+] - Running time (nanoSeconds): 32217137
+[+] - Running time (nanoSeconds): 46272
 [+] List amount: - 800
-[+] - Running time (nanoSeconds): 4051998
+[+] - Running time (nanoSeconds): 40795
 [+] List amount: - 800
-[+] - Running time (nanoSeconds): 4447066
+[+] - Running time (nanoSeconds): 81181
 [+] List amount: - 800
-[+] - Running time (nanoSeconds): 4249375
+[+] - Running time (nanoSeconds): 176852
 [+] List amount: - 800
-[+] - Running time (nanoSeconds): 4543398
+[+] - Running time (nanoSeconds): 76175
 [+] List amount: - 800
-[+] - Running time (nanoSeconds): 4991393
+[+] - Running time (nanoSeconds): 49925
 [+] List amount: - 800
-[+] - Running time (nanoSeconds): 4864304
+[+] - Running time (nanoSeconds): 53251
 [+] List amount: - 1600
-[+] - Running time (nanoSeconds): 6761286
+[+] - Running time (nanoSeconds): 44163
 [+] List amount: - 1600
-[+] - Running time (nanoSeconds): 5185493
+[+] - Running time (nanoSeconds): 44044
 [+] List amount: - 1600
-[+] - Running time (nanoSeconds): 8628736
+[+] - Running time (nanoSeconds): 47554
 [+] List amount: - 1600
-[+] - Running time (nanoSeconds): 6893200
+[+] - Running time (nanoSeconds): 36431
 [+] List amount: - 1600
-[+] - Running time (nanoSeconds): 6305708
+[+] - Running time (nanoSeconds): 82056
 [+] List amount: - 1600
-[+] - Running time (nanoSeconds): 10377654
+[+] - Running time (nanoSeconds): 63161
 [+] List amount: - 1600
-[+] - Running time (nanoSeconds): 6384613
+[+] - Running time (nanoSeconds): 63401
 [+] List amount: - 1600
-[+] - Running time (nanoSeconds): 16169237
+[+] - Running time (nanoSeconds): 207150
 [+] List amount: - 1600
-[+] - Running time (nanoSeconds): 10167513
+[+] - Running time (nanoSeconds): 1060403
 [+] List amount: - 1600
-[+] - Running time (nanoSeconds): 13209815
+[+] - Running time (nanoSeconds): 90488
 [+] List amount: - 3200
-[+] - Running time (nanoSeconds): 42505284
+[+] - Running time (nanoSeconds): 87938
 [+] List amount: - 3200
-[+] - Running time (nanoSeconds): 15608115
+[+] - Running time (nanoSeconds): 50918
 [+] List amount: - 3200
-[+] - Running time (nanoSeconds): 12515577
+[+] - Running time (nanoSeconds): 69181
 [+] List amount: - 3200
-[+] - Running time (nanoSeconds): 21622020
+[+] - Running time (nanoSeconds): 48294
 [+] List amount: - 3200
-[+] - Running time (nanoSeconds): 10642305
+[+] - Running time (nanoSeconds): 95180
 [+] List amount: - 3200
-[+] - Running time (nanoSeconds): 10750620
+[+] - Running time (nanoSeconds): 54882
 [+] List amount: - 3200
-[+] - Running time (nanoSeconds): 9582405
+[+] - Running time (nanoSeconds): 51001
 [+] List amount: - 3200
-[+] - Running time (nanoSeconds): 10020855
+[+] - Running time (nanoSeconds): 150801
 [+] List amount: - 3200
-[+] - Running time (nanoSeconds): 14145687
+[+] - Running time (nanoSeconds): 64116
 [+] List amount: - 3200
-[+] - Running time (nanoSeconds): 11494303
+[+] - Running time (nanoSeconds): 57980
 [+] List amount: - 6400
-[+] - Running time (nanoSeconds): 19802164
+[+] - Running time (nanoSeconds): 63558
 [+] List amount: - 6400
-[+] - Running time (nanoSeconds): 24053259
+[+] - Running time (nanoSeconds): 73148
 [+] List amount: - 6400
-[+] - Running time (nanoSeconds): 28230312
+[+] - Running time (nanoSeconds): 42985
 [+] List amount: - 6400
-[+] - Running time (nanoSeconds): 27764762
+[+] - Running time (nanoSeconds): 48415
 [+] List amount: - 6400
-[+] - Running time (nanoSeconds): 32769403
+[+] - Running time (nanoSeconds): 69969
 [+] List amount: - 6400
-[+] - Running time (nanoSeconds): 35600972
+[+] - Running time (nanoSeconds): 52051
 [+] List amount: - 6400
-[+] - Running time (nanoSeconds): 43464918
+[+] - Running time (nanoSeconds): 52956
 [+] List amount: - 6400
-[+] - Running time (nanoSeconds): 25173309
+[+] - Running time (nanoSeconds): 389000
 [+] List amount: - 6400
-[+] - Running time (nanoSeconds): 14979338
+[+] - Running time (nanoSeconds): 61835
 [+] List amount: - 6400
-[+] - Running time (nanoSeconds): 23034501
+[+] - Running time (nanoSeconds): 58699
 [+] List amount: - 12800
-[+] - Running time (nanoSeconds): 22189964
+[+] - Running time (nanoSeconds): 274060
 [+] List amount: - 12800
-[+] - Running time (nanoSeconds): 32424501
+[+] - Running time (nanoSeconds): 2123876
 [+] List amount: - 12800
-[+] - Running time (nanoSeconds): 21087402
+[+] - Running time (nanoSeconds): 102280
 [+] List amount: - 12800
-[+] - Running time (nanoSeconds): 23679193
+[+] - Running time (nanoSeconds): 59809
 [+] List amount: - 12800
-[+] - Running time (nanoSeconds): 24801629
+[+] - Running time (nanoSeconds): 91242
 [+] List amount: - 12800
-[+] - Running time (nanoSeconds): 16621244
+[+] - Running time (nanoSeconds): 74240
 [+] List amount: - 12800
-[+] - Running time (nanoSeconds): 19813268
+[+] - Running time (nanoSeconds): 55679
 [+] List amount: - 12800
-[+] - Running time (nanoSeconds): 18455829
+[+] - Running time (nanoSeconds): 46598
 [+] List amount: - 12800
-[+] - Running time (nanoSeconds): 21627616
+[+] - Running time (nanoSeconds): 78462
 [+] List amount: - 12800
-[+] - Running time (nanoSeconds): 22643966
+[+] - Running time (nanoSeconds): 51951
 [+] List amount: - 25600
-[+] - Running time (nanoSeconds): 26230017
+[+] - Running time (nanoSeconds): 45395
 [+] List amount: - 25600
-[+] - Running time (nanoSeconds): 27665279
+[+] - Running time (nanoSeconds): 127921
 [+] List amount: - 25600
-[+] - Running time (nanoSeconds): 27557729
+[+] - Running time (nanoSeconds): 128348
 [+] List amount: - 25600
-[+] - Running time (nanoSeconds): 53050108
+[+] - Running time (nanoSeconds): 92306
 [+] List amount: - 25600
-[+] - Running time (nanoSeconds): 33514875
+[+] - Running time (nanoSeconds): 50510
 [+] List amount: - 25600
-[+] - Running time (nanoSeconds): 19881670
+[+] - Running time (nanoSeconds): 57615
 [+] List amount: - 25600
-[+] - Running time (nanoSeconds): 25558168
+[+] - Running time (nanoSeconds): 53942
 [+] List amount: - 25600
-[+] - Running time (nanoSeconds): 28960871
+[+] - Running time (nanoSeconds): 54023
 [+] List amount: - 25600
-[+] - Running time (nanoSeconds): 36988085
+[+] - Running time (nanoSeconds): 54685
 [+] List amount: - 25600
-[+] - Running time (nanoSeconds): 58134101
+[+] - Running time (nanoSeconds): 56387
 [+] List amount: - 51200
-[+] - Running time (nanoSeconds): 27189386
+[+] - Running time (nanoSeconds): 50657
 [+] List amount: - 51200
-[+] - Running time (nanoSeconds): 21937279
+[+] - Running time (nanoSeconds): 48238
 [+] List amount: - 51200
-[+] - Running time (nanoSeconds): 22620871
+[+] - Running time (nanoSeconds): 50976
 [+] List amount: - 51200
-[+] - Running time (nanoSeconds): 33698049
+[+] - Running time (nanoSeconds): 46984
 [+] List amount: - 51200
-[+] - Running time (nanoSeconds): 33525791
+[+] - Running time (nanoSeconds): 60611
 [+] List amount: - 51200
-[+] - Running time (nanoSeconds): 33573947
+[+] - Running time (nanoSeconds): 50147
 [+] List amount: - 51200
-[+] - Running time (nanoSeconds): 34557808
+[+] - Running time (nanoSeconds): 53528
 [+] List amount: - 51200
-[+] - Running time (nanoSeconds): 25896260
+[+] - Running time (nanoSeconds): 49915
 [+] List amount: - 51200
-[+] - Running time (nanoSeconds): 24258941
+[+] - Running time (nanoSeconds): 56156
 [+] List amount: - 51200
-[+] - Running time (nanoSeconds): 33282322
+[+] - Running time (nanoSeconds): 50740
 [+] List amount: - 102400
-[+] - Running time (nanoSeconds): 33935643
+[+] - Running time (nanoSeconds): 40778
 [+] List amount: - 102400
-[+] - Running time (nanoSeconds): 36788746
+[+] - Running time (nanoSeconds): 46561
 [+] List amount: - 102400
-[+] - Running time (nanoSeconds): 66582218
+[+] - Running time (nanoSeconds): 47803
 [+] List amount: - 102400
-[+] - Running time (nanoSeconds): 29677006
+[+] - Running time (nanoSeconds): 53448
 [+] List amount: - 102400
-[+] - Running time (nanoSeconds): 27890479
+[+] - Running time (nanoSeconds): 50611
 [+] List amount: - 102400
-[+] - Running time (nanoSeconds): 29188147
+[+] - Running time (nanoSeconds): 50779
 [+] List amount: - 102400
-[+] - Running time (nanoSeconds): 35968180
+[+] - Running time (nanoSeconds): 54442
 [+] List amount: - 102400
-[+] - Running time (nanoSeconds): 40675021
+[+] - Running time (nanoSeconds): 65156
 [+] List amount: - 102400
-[+] - Running time (nanoSeconds): 40419188
+[+] - Running time (nanoSeconds): 55390
 [+] List amount: - 102400
-[+] - Running time (nanoSeconds): 36887266
+[+] - Running time (nanoSeconds): 57276
 [+] List amount: - 204800
-[+] - Running time (nanoSeconds): 31797092
+[+] - Running time (nanoSeconds): 49747
 [+] List amount: - 204800
-[+] - Running time (nanoSeconds): 34754993
+[+] - Running time (nanoSeconds): 43451
 [+] List amount: - 204800
-[+] - Running time (nanoSeconds): 37345403
+[+] - Running time (nanoSeconds): 43731
 [+] List amount: - 204800
-[+] - Running time (nanoSeconds): 49695488
+[+] - Running time (nanoSeconds): 45946
 [+] List amount: - 204800
-[+] - Running time (nanoSeconds): 44030344
+[+] - Running time (nanoSeconds): 46010
 [+] List amount: - 204800
-[+] - Running time (nanoSeconds): 35918049
+[+] - Running time (nanoSeconds): 48234
 [+] List amount: - 204800
-[+] - Running time (nanoSeconds): 41066198
+[+] - Running time (nanoSeconds): 2286482
 [+] List amount: - 204800
-[+] - Running time (nanoSeconds): 35115114
+[+] - Running time (nanoSeconds): 85569
 [+] List amount: - 204800
-[+] - Running time (nanoSeconds): 50083028
+[+] - Running time (nanoSeconds): 54296
 [+] List amount: - 204800
-[+] - Running time (nanoSeconds): 50380859
+[+] - Running time (nanoSeconds): 79174
 [+] List amount: - 409600
-[+] - Running time (nanoSeconds): 45645708
+[+] - Running time (nanoSeconds): 61303
 [+] List amount: - 409600
-[+] - Running time (nanoSeconds): 41555657
+[+] - Running time (nanoSeconds): 63403
 [+] List amount: - 409600
-[+] - Running time (nanoSeconds): 39827506
+[+] - Running time (nanoSeconds): 47201
 [+] List amount: - 409600
-[+] - Running time (nanoSeconds): 51113929
+[+] - Running time (nanoSeconds): 87220
 [+] List amount: - 409600
-[+] - Running time (nanoSeconds): 64930980
+[+] - Running time (nanoSeconds): 50588
 [+] List amount: - 409600
-[+] - Running time (nanoSeconds): 52332236
+[+] - Running time (nanoSeconds): 51105
 [+] List amount: - 409600
-[+] - Running time (nanoSeconds): 43369315
+[+] - Running time (nanoSeconds): 53187
 [+] List amount: - 409600
-[+] - Running time (nanoSeconds): 46279338
+[+] - Running time (nanoSeconds): 58255
 [+] List amount: - 409600
-[+] - Running time (nanoSeconds): 63422306
+[+] - Running time (nanoSeconds): 56385
 [+] List amount: - 409600
-[+] - Running time (nanoSeconds): 57707206
+[+] - Running time (nanoSeconds): 68354
 [+] List amount: - 819200
-[+] - Running time (nanoSeconds): 42523760
+[+] - Running time (nanoSeconds): 44227
 [+] List amount: - 819200
-[+] - Running time (nanoSeconds): 45617230
+[+] - Running time (nanoSeconds): 62685
 [+] List amount: - 819200
-[+] - Running time (nanoSeconds): 52129045
+[+] - Running time (nanoSeconds): 52668
 [+] List amount: - 819200
-[+] - Running time (nanoSeconds): 50813087
+[+] - Running time (nanoSeconds): 54397
 [+] List amount: - 819200
-[+] - Running time (nanoSeconds): 50628465
+[+] - Running time (nanoSeconds): 55497
 [+] List amount: - 819200
-[+] - Running time (nanoSeconds): 48450557
+[+] - Running time (nanoSeconds): 47080
 [+] List amount: - 819200
-[+] - Running time (nanoSeconds): 65227547
+[+] - Running time (nanoSeconds): 54943
 [+] List amount: - 819200
-[+] - Running time (nanoSeconds): 58657840
+[+] - Running time (nanoSeconds): 55170
 [+] List amount: - 819200
-[+] - Running time (nanoSeconds): 50561582
+[+] - Running time (nanoSeconds): 74747
 [+] List amount: - 819200
-[+] - Running time (nanoSeconds): 51725435
+[+] - Running time (nanoSeconds): 68503
 [+] List amount: - 1638400
-[+] - Running time (nanoSeconds): 52898987
+[+] - Running time (nanoSeconds): 54028
 [+] List amount: - 1638400
-[+] - Running time (nanoSeconds): 64034842
+[+] - Running time (nanoSeconds): 141765
 [+] List amount: - 1638400
-[+] - Running time (nanoSeconds): 57438948
+[+] - Running time (nanoSeconds): 53334
 [+] List amount: - 1638400
-[+] - Running time (nanoSeconds): 61093098
+[+] - Running time (nanoSeconds): 52700
 [+] List amount: - 1638400
-[+] - Running time (nanoSeconds): 61740473
+[+] - Running time (nanoSeconds): 51569
 [+] List amount: - 1638400
-[+] - Running time (nanoSeconds): 66923327
+[+] - Running time (nanoSeconds): 52195
 [+] List amount: - 1638400
-[+] - Running time (nanoSeconds): 55703805
+[+] - Running time (nanoSeconds): 62519
 [+] List amount: - 1638400
-[+] - Running time (nanoSeconds): 57262562
+[+] - Running time (nanoSeconds): 57600
 [+] List amount: - 1638400
-[+] - Running time (nanoSeconds): 62484266
+[+] - Running time (nanoSeconds): 56976
 [+] List amount: - 1638400
-[+] - Running time (nanoSeconds): 64624695
+[+] - Running time (nanoSeconds): 60366
 [+] List amount: - 3276800
-[+] - Running time (nanoSeconds): 60902469
+[+] - Running time (nanoSeconds): 218830
 [+] List amount: - 3276800
-[+] - Running time (nanoSeconds): 62846339
+[+] - Running time (nanoSeconds): 97830
 [+] List amount: - 3276800
-[+] - Running time (nanoSeconds): 69698843
+[+] - Running time (nanoSeconds): 74368
 [+] List amount: - 3276800
-[+] - Running time (nanoSeconds): 68375935
+[+] - Running time (nanoSeconds): 52451
 [+] List amount: - 3276800
-[+] - Running time (nanoSeconds): 63759049
+[+] - Running time (nanoSeconds): 84609
 [+] List amount: - 3276800
-[+] - Running time (nanoSeconds): 64525437
+[+] - Running time (nanoSeconds): 62589
 [+] List amount: - 3276800
-[+] - Running time (nanoSeconds): 77197636
+[+] - Running time (nanoSeconds): 147628
 [+] List amount: - 3276800
-[+] - Running time (nanoSeconds): 68795171
+[+] - Running time (nanoSeconds): 53276
 [+] List amount: - 3276800
-[+] - Running time (nanoSeconds): 70709090
+[+] - Running time (nanoSeconds): 52768
 [+] List amount: - 3276800
-[+] - Running time (nanoSeconds): 67254006
+[+] - Running time (nanoSeconds): 49404
 [+] List amount: - 6553600
-[+] - Running time (nanoSeconds): 78594115
+[+] - Running time (nanoSeconds): 45027
 [+] List amount: - 6553600
-[+] - Running time (nanoSeconds): 71996878
+[+] - Running time (nanoSeconds): 47032
 [+] List amount: - 6553600
-[+] - Running time (nanoSeconds): 74963605
+[+] - Running time (nanoSeconds): 46214
 [+] List amount: - 6553600
-[+] - Running time (nanoSeconds): 76112421
+[+] - Running time (nanoSeconds): 49481
 [+] List amount: - 6553600
-[+] - Running time (nanoSeconds): 69626075
+[+] - Running time (nanoSeconds): 51652
 [+] List amount: - 6553600
-[+] - Running time (nanoSeconds): 83916178
+[+] - Running time (nanoSeconds): 50583
 [+] List amount: - 6553600
-[+] - Running time (nanoSeconds): 79601460
+[+] - Running time (nanoSeconds): 50472
 [+] List amount: - 6553600
-[+] - Running time (nanoSeconds): 89029555
+[+] - Running time (nanoSeconds): 54025
 [+] List amount: - 6553600
-[+] - Running time (nanoSeconds): 79195213
+[+] - Running time (nanoSeconds): 984178
 [+] List amount: - 6553600
-[+] - Running time (nanoSeconds): 84268661
+[+] - Running time (nanoSeconds): 167311
