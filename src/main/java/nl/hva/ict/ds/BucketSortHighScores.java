@@ -3,7 +3,12 @@ package nl.hva.ict.ds;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BucketSortHighScores  implements HighScoreList{
+/**
+ * Bucket sorting the high scores.
+ * 
+ * @author Joey Blankendaal (500778751), Keegan Meijer (500781475)
+ */
+public class BucketSortHighScores implements HighScoreList {
     private List<Player> playerList = new ArrayList<>();
     private List<Player> temp;
     int numberOfBuckets = 10;
@@ -14,6 +19,7 @@ public class BucketSortHighScores  implements HighScoreList{
      */
     public BucketSortHighScores(){
         System.out.println("[+] - Bucket sort length: " + bucketList.length);
+        
         for (int i = 0; i < bucketList.length; i++) {
             bucketList[i] = new Bucket();
         }
@@ -38,18 +44,14 @@ public class BucketSortHighScores  implements HighScoreList{
         }
         playerList = temp;
     }
-
-
-
+    
     @Override
     public List<Player> getHighScores(int numberOfHighScores) {
         return playerList.subList(0, Math.min(numberOfHighScores, playerList.size()));
     }
-
-
+    
     @Override
     public List<Player> findPlayer(String firstName, String lastName) throws IllegalArgumentException {
-//      Utilizing the insertion sort class find method to prevent duplicate code
         InsertionSortHighScores is = new InsertionSortHighScores();
         return is.findPlayer(firstName, lastName);
     }
@@ -61,15 +63,3 @@ public class BucketSortHighScores  implements HighScoreList{
         ArrayList<Player> bucket = new ArrayList<>();
     }
 }
-
-//        List<Player> foundPlayers = new ArrayList<>();
-//
-//        for(Player player: playerList){
-////          Checks if either firstname or lastname exists, if so add the player to the temp list
-//            if (playerList.contains(firstName)|| playerList.contains(lastName)){foundPlayers.add(player);}
-////            if(playersList.contains(||playersList.contains(lastName)))
-//            if (playerList.contains(firstName.concat(lastName))||playerList.contains(lastName.concat(firstName))){foundPlayers.add(player);}
-//        }
-//        return foundPlayers;
-
-
