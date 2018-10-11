@@ -123,10 +123,6 @@ public class InsertionSortHighScores implements HighScoreList, Comparator<Player
 
         return 0;
     }
-
-    public int getHighscoreSize() {
-        return playersList.size();
-    }
 }
 
 /**
