@@ -134,16 +134,11 @@ public class HighScoreListTest {
         highScores.add(third);
         highScores.add(fourth);
 
-<<<<<<< HEAD
 //        FOR PRINT THE LIST
 //        for (Player player: highScores.getHighScores(4)) {
 //            System.out.println("[+] - Player in highscores array: " + player.getFirstName()+" " + player.toString());
 //        }
-=======
-        for (Player player: highScores.getHighScores(4)) {
-            System.out.println("[+] - Player in highscores array: " + player.getFirstName()+" " + player.toString());
-        }
->>>>>>> 7fa5e807fc46045d75745c1bb98bf0ddf7d061e9
+
 
         ArrayList<Player> sortedArrayList = new ArrayList<>();
         sortedArrayList.add(fourth);
@@ -154,7 +149,6 @@ public class HighScoreListTest {
         assertEquals(sortedArrayList, highScores.getHighScores(4));
     }
 
-<<<<<<< HEAD
     /**
      * This test has been added in order to test the specific bucket list ordering
      * The test will work for InsertionSortHighScores and PriorityQueueHighScores as well,
@@ -185,8 +179,7 @@ public class HighScoreListTest {
      * Checks if the HighScoreList adds all the numbers correct. Running this function can be used
      * for calculating
      */
-=======
->>>>>>> 7fa5e807fc46045d75745c1bb98bf0ddf7d061e9
+
     @Test
     public void checkHighScoreSize() {
         for (int i = 0; i < 50; i++) {
@@ -209,15 +202,24 @@ public class HighScoreListTest {
         final int SECONDS_DIVIDER = 1000000000;
         final int MAX_PLAYERS_FOR_TIME_TEST = 10000000;
 //        Creeer een lijst met steeds dubbele nummer tot onder de 10.000.000
-        int elapsedTime;
+        int elapsedTime = 0;
+//      Start from 100
+        outerloop:
         for (int listAmount = 100; listAmount < MAX_PLAYERS_FOR_TIME_TEST; listAmount = listAmount * 2) {
-            System.out.println("[+] - " + listAmount);
-            for (int i = 0; i < ; i++) {
-                
+            for (int i = 0; i < 10; i++) {
+//             Run every test 10 times
+                long start = System.nanoTime();
+
+                highScores.add(new Player("KEEGANMEIJER", "JOEYBLANKENDAAL", i));
+                System.out.println("[+] List amount: - " + listAmount);
+                long end = System.nanoTime();
+                System.out.println("[+] - Running time: " + (int)(end - start));
+                if ((int)(end - start)<15){break outerloop;}
             }
         }
     }
 }
+
 //        while (listAmount < 10000000){
 //            listAmount = listAmount * 2;
 //            System.out.println("[+] - " + listAmount);
