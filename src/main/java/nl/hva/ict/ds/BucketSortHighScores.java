@@ -1,6 +1,8 @@
 package nl.hva.ict.ds;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -31,9 +33,10 @@ public class BucketSortHighScores implements HighScoreList {
         bucketList[(int) bucketIndex].bucket.add(player);
 
 //        Sorts each bucket
-        InsertionSortHighScores is = new InsertionSortHighScores();
+//        InsertionSortHighScores is = new InsertionSortHighScores();
         for (int i = 0; i < bucketList.length; i++) {
-            is.selectionSortHighscores(bucketList[i].bucket);
+            Collections.sort((ArrayList)bucketList[i].bucket);
+//            is.selectionSortHighscores(bucketList[i].bucket);
         }
 
 //        Add the bucket to the correct list
