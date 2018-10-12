@@ -90,17 +90,10 @@ public class HighScoreListTest {
     }
 
     /**
-<<<<<<< HEAD
-     * @author Joey Blankendaal (500778751), Keegan Meijer (500781475)
-     * <p>
-     * Checks if the given index is valid,
-     * when retrieving a specific object from the newly created highscores list.
-=======
      * Checks if the given index is valid,
      * when retrieving a specific object from the newly created highscores list.
      *
      * @author Keegan Meijer (500781475), Joey Blankendaal (500778751)
->>>>>>> 7fa5e807fc46045d75745c1bb98bf0ddf7d061e9
      */
     @Test(expected = IndexOutOfBoundsException.class)
     public void indexOutOfBoundsExceptionGetHighScores() {
@@ -108,19 +101,14 @@ public class HighScoreListTest {
     }
 
     /**
-<<<<<<< HEAD
      * @author Joey Blankendaal (500778751), Keegan Meijer (500781475)
-     * <p>
-=======
->>>>>>> 7fa5e807fc46045d75745c1bb98bf0ddf7d061e9
      * This function will test a long list and check if the list is sorted.
      * For running the tests we'll check if the third object is the same as expected but
      * we have a for each loop commented, so that the tester is able to see the raw data output.
      * All the other players attributes are the same because we're only testing the highscores.
      * <p>
-     * Excecpted output: [dumbledore(120) - second(109) - first(104) - nearlyHeadlessNick(102]
+     * Excecpted output: [fourt(90k) - second(70k) - first(50k) - third(30k]
      *
-     * @author Keegan Meijer (500781475), Joey Blankendaal (500778751)
      */
     @Test
     public void highScoresSortingTest() {

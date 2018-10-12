@@ -6,11 +6,11 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 /**
- * Use a priority queue, with own heap implementation
- *
+ * Use a priority queue
+ * 
  * @author Joey Blankendaal (500778751), Keegan Meijer (500781475)
  */
-public class PriorityQueueHighScores implements HighScoreList, Comparator<Player> {
+public class PriorityQueueHighScoresJavaCollections implements HighScoreList, Comparator<Player> {
     private PriorityQueue<Player> players = new PriorityQueue<>(10, this);
 
     @Override
